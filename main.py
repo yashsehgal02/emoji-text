@@ -15,6 +15,6 @@ async def text2emoji(ctx, *, text):
         embedVar = discord.Embed(title="💀 error", description=e, color=0xADD8E6)
         await ctx.send(embed=embedVar)
        
-bot.run(os.getenv['Token'])
+bot.run(os.environ["Token"])
 
         
